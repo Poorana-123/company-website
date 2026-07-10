@@ -1,0 +1,77 @@
+/* ================= ABOUT ================= */
+
+.about{
+    width:100%;
+    padding:100px 8%;
+    text-align:center;
+    background:#f8fbff;
+}
+
+.section-title span{
+    color:#0D5BFF;
+    font-weight:600;
+    letter-spacing:2px;
+}
+
+.section-title h2{
+    font-size:45px;
+    margin:15px 0;
+}
+
+.about-text{
+    max-width:850px;
+    margin:25px auto 60px;
+    color:#555;
+    line-height:1.9;
+    font-size:18px;
+}
+
+.about-cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.about-card{
+    background:white;
+    padding:40px 25px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.about-card:hover{
+    transform:translateY(-10px);
+}
+
+.icon{
+    font-size:45px;
+    color:#0D5BFF;
+    margin-bottom:20px;
+}
+
+.about-card h3{
+    font-size:38px;
+    color:#222;
+}
+
+.about-card p{
+    color:#666;
+    justify-content:justify;
+}
+
+.about-btn{
+    margin-top:60px;
+    padding:15px 40px;
+    background:#0D5BFF;
+    color:white;
+    border:none;
+    border-radius:40px;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.about-btn:hover{
+    background:#0848d8;
+}

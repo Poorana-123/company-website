@@ -1,0 +1,139 @@
+/* ==========================
+   GOOGLE FONT
+========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================
+   GLOBAL RESET
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==========================
+   HTML & BODY
+========================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    background: #ffffff;
+    color: #222;
+    overflow-x: hidden;
+}
+
+/* ==========================
+   ROOT
+========================== */
+
+#root {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* ==========================
+   LINKS
+========================== */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ==========================
+   LISTS
+========================== */
+
+ul,
+ol {
+    list-style: none;
+}
+
+/* ==========================
+   IMAGES
+========================== */
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* ==========================
+   INPUTS
+========================== */
+
+input,
+textarea,
+select {
+    font-family: inherit;
+    outline: none;
+}
+
+/* ==========================
+   HEADINGS
+========================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    color: #111;
+}
+
+/* ==========================
+   PARAGRAPH
+========================== */
+
+p {
+    color: #555;
+    line-height: 1.8;
+}
+
+/* ==========================
+   COMMON CONTAINER
+========================== */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ==========================
+   SECTION SPACING
+========================== */
+
+section {
+    padding: 80px 0;
+}
+
+/* ==========================
+   SELECTION
+========================== */
+
+::selection {
+    background: #0D5BFF;
+    color: #fff;
+}
