@@ -98,3 +98,121 @@
     color: #222;
     transform: rotate(180deg);
 }
+
+/*==========================================
+            TABLET
+==========================================*/
+
+@media (max-width: 992px){
+
+.topbar{
+
+    padding:12px 5%;
+
+}
+
+.topbar-left{
+
+    gap:12px;
+
+}
+
+.topbar-right{
+
+    gap:12px;
+
+}
+
+}
+
+
+/*==========================================
+            MOBILE
+==========================================*/
+
+@media (max-width:768px){
+
+.topbar{
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+    text-align:center;
+
+    padding:15px 20px;
+
+}
+
+.topbar-left{
+
+    justify-content:center;
+
+}
+
+.topbar-right{
+
+    justify-content:center;
+
+    width:100%;
+
+}
+
+}
+
+
+/*==========================================
+        SMALL MOBILE
+==========================================*/
+
+@media (max-width:480px){
+
+.topbar{
+
+    font-size:13px;
+
+}
+
+.topbar-left{
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+.divider{
+
+    display:none;
+
+}
+
+.offer{
+
+    font-size:14px;
+
+}
+
+.topbar-right{
+
+    gap:10px;
+
+}
+
+.topbar-right a,
+
+.close-btn{
+
+    width:32px;
+
+    height:32px;
+
+    font-size:14px;
+
+}
+
+}

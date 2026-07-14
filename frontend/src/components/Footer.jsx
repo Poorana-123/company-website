@@ -73,8 +73,6 @@ function Footer() {
 
           <a href="#"> Full Stack Development</a>
 
-          <a href="#"> Python Programming</a>
-
           <a href="#"> HR Management</a>
 
         </div>
