@@ -1,44 +1,71 @@
+import { useState } from "react";
 import "../styles/Navbar.css";
 import logo from "../assets/RMV-logo.png";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 function Navbar() {
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <nav className="navbar">
 
       <div className="logo">
-        <Link to="/">
+        <Link to="/" onClick={closeMenu}>
           <img src={logo} alt="Company Logo" />
         </Link>
       </div>
 
-      <ul className="nav-links">
+      <ul className={menuOpen ? "nav-links active" : "nav-links"}>
 
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/" onClick={closeMenu}>
+            Home
+          </Link>
         </li>
 
         <li>
-          <a href="/#about">About</a>
+          <HashLink smooth to="/#about" onClick={closeMenu}>
+            About
+          </HashLink>
         </li>
 
         <li>
-          <a href="/#services">Services</a>
+          <HashLink smooth to="/#services" onClick={closeMenu}>
+            Services
+          </HashLink>
         </li>
 
         <li>
-          <a href="/#portfolio">Portfolio</a>
+          <HashLink smooth to="/#portfolio" onClick={closeMenu}>
+            Portfolio
+          </HashLink>
         </li>
 
         <li>
-          <Link to="/Contact">Contact</Link>
+          <Link to="/contact" onClick={closeMenu}>
+            Contact
+          </Link>
         </li>
 
       </ul>
 
       <button className="nav-btn">
-        <Link to="/Contact">Get Quote</Link>
+        <Link to="/contact">
+          Get Quote
+        </Link>
       </button>
+
+      <div
+        className="menu-icon"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        {menuOpen ? <FaTimes /> : <FaBars />}
+      </div>
 
     </nav>
   );
