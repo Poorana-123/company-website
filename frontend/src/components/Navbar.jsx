@@ -41,7 +41,7 @@ function Navbar() {
         </li>
 
         <li>
-          <Link to="/Port">Portfolio</Link>
+          <Link to="/Port" onClick={closeMenu}>Portfolio</Link>
         </li>
 
         <li>
