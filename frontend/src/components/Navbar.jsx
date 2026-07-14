@@ -41,9 +41,7 @@ function Navbar() {
         </li>
 
         <li>
-          <HashLink smooth to="/#portfolio" onClick={closeMenu}>
-            Portfolio
-          </HashLink>
+          <Link to="/Port">Portfolio</Link>
         </li>
 
         <li>
