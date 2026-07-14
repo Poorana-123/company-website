@@ -1,5 +1,8 @@
 import "../styles/Hero.css";
 import { TypeAnimation } from "react-type-animation";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+
 
 function Hero() {
   return (
@@ -46,11 +49,12 @@ function Hero() {
 
         <div className="hero-buttons">
           <button className="primary-btn">
-            Get Started
+            <Link to="/Contact">Get Started</Link>
           </button>
 
           <button className="secondary-btn">
-            Explore Courses
+            <HashLink to="/#services">Explore Courses</HashLink>
+            
           </button>
         </div>
 

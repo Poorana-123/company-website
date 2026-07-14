@@ -4,9 +4,9 @@ import About from "../components/About";
 import Topbar from "../components/Topbar";
 import Services from "../components/Services";
 import Why from "../components/Why";
+import Process from "../components/Process";
 // import Portfolio from "../components/Portfolio";
 // import Testimonials from "../components/Testimonials";
-// import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
 function Home() {
@@ -18,11 +18,12 @@ function Home() {
       <About />
       <Services />
       <Why />
+      <Process/>
       <Footer />
       {/*
       <Portfolio />
       <Testimonials />
-      <Contact />
+      
        */}
     </>
   );

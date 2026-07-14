@@ -1,0 +1,1035 @@
+/* ==========================================
+            PROCESS SECTION
+========================================== */
+
+.process{
+
+    padding:110px 8%;
+
+    background:#f8fbff;
+
+    overflow:hidden;
+}
+
+/* ==========================================
+            SECTION HEADER
+========================================== */
+
+.process-header{
+
+    max-width:850px;
+
+    margin:0 auto 70px;
+
+    text-align:center;
+}
+
+/* Small Tag */
+
+.process-tag{
+
+    display:inline-block;
+
+    padding:10px 24px;
+
+    background:#EEF4FF;
+
+    color:#0D5BFF;
+
+    border-radius:50px;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    margin-bottom:20px;
+
+    box-shadow:0 8px 20px rgba(13,91,255,.08);
+}
+
+/* Heading */
+
+.process-header h2{
+
+    font-size:52px;
+
+    font-weight:800;
+
+    color:#1C2333;
+
+    line-height:1.2;
+
+    margin-bottom:22px;
+}
+
+/* Highlight */
+
+.process-header h2 span{
+
+    color:#0D5BFF;
+
+    position:relative;
+}
+
+.process-header h2 span::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:100%;
+
+    height:4px;
+
+    background:#0D5BFF;
+
+    border-radius:20px;
+}
+
+/* Description */
+
+.process-header p{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#666;
+
+    max-width:760px;
+
+    margin:auto;
+}
+
+/* ==========================================
+            RESPONSIVE HEADER
+========================================== */
+
+@media(max-width:992px){
+
+    .process-header h2{
+
+        font-size:42px;
+    }
+
+    .process-header p{
+
+        font-size:17px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .process{
+
+        padding:90px 5%;
+    }
+
+    .process-header{
+
+        margin-bottom:50px;
+    }
+
+    .process-header h2{
+
+        font-size:34px;
+    }
+
+    .process-header p{
+
+        font-size:16px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .process-header h2{
+
+        font-size:28px;
+    }
+
+    .process-tag{
+
+        font-size:12px;
+
+        padding:8px 18px;
+    }
+
+}
+
+/* ==========================================
+            PROCESS SLIDER
+========================================== */
+
+.process-slider{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:40px;
+
+    margin-top:60px;
+
+}
+
+/* ==========================================
+              ARROWS
+========================================== */
+
+.arrow{
+
+    width:65px;
+
+    height:65px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    color:#0D5BFF;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.12);
+
+    transition:.35s;
+}
+
+.arrow:hover{
+
+    background:#0D5BFF;
+
+    color:#fff;
+
+    transform:scale(1.1);
+
+    box-shadow:0 18px 40px rgba(13,91,255,.35);
+}
+
+/* ==========================================
+            PROCESS CARD
+========================================== */
+
+.process-card{
+
+    position:relative;
+
+    width:760px;
+
+    background:#fff;
+
+    border-radius:30px;
+
+    padding:45px;
+
+    overflow:hidden;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.08);
+
+    transition:.4s;
+}
+
+/* Background Decorations */
+
+.process-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:280px;
+
+    height:280px;
+
+    border-radius:50%;
+
+    background:rgba(13,91,255,.05);
+
+    top:-120px;
+
+    right:-120px;
+}
+
+.process-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    background:rgba(13,91,255,.05);
+
+    bottom:-80px;
+
+    left:-80px;
+}
+
+.process-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 30px 80px rgba(13,91,255,.18);
+}
+
+/* ==========================================
+             CARD TOP
+========================================== */
+
+.card-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+    position:relative;
+
+    z-index:2;
+}
+
+.step-label{
+
+    display:inline-block;
+
+    background:#EEF4FF;
+
+    color:#0D5BFF;
+
+    padding:10px 22px;
+
+    border-radius:40px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    font-size:15px;
+}
+
+.duration{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:#F8F9FC;
+
+    padding:10px 18px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    color:#666;
+}
+
+/* ==========================================
+              ICON
+========================================== */
+
+.process-icon{
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:auto;
+
+    font-size:48px;
+
+    color:#fff;
+
+    box-shadow:0 20px 40px rgba(13,91,255,.30);
+
+    animation:floatIcon 3s ease-in-out infinite;
+
+    position:relative;
+
+    z-index:2;
+}
+
+@keyframes floatIcon{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+            TITLE
+========================================== */
+
+.process-card h3{
+
+    text-align:center;
+
+    margin-top:30px;
+
+    font-size:34px;
+
+    color:#1C2333;
+
+    position:relative;
+
+    z-index:2;
+}
+
+/* ==========================================
+          DESCRIPTION
+========================================== */
+
+.process-card p{
+
+    text-align:center;
+
+    margin-top:18px;
+
+    color:#666;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    position:relative;
+
+    z-index:2;
+}
+
+/* ==========================================
+            FEATURE GRID
+========================================== */
+
+.process-features{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+    margin:40px 0;
+
+    position:relative;
+
+    z-index:2;
+}
+
+.feature-box{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:16px 18px;
+
+    background:#F7F9FC;
+
+    border-radius:16px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:#1C2333;
+
+    transition:.35s;
+
+    border:1px solid transparent;
+
+    cursor:pointer;
+}
+
+.feature-box:hover{
+
+    background:#0D5BFF;
+
+    color:#fff;
+
+    transform:translateY(-6px);
+
+    box-shadow:0 12px 30px rgba(13,91,255,.30);
+}
+
+/* ==========================================
+            CARD FOOTER
+========================================== */
+
+.process-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:25px 0;
+
+    margin-top:15px;
+
+    border-top:1px solid #E8EDF5;
+
+    position:relative;
+
+    z-index:2;
+}
+
+/* ==========================================
+             TEAM INFO
+========================================== */
+
+.team{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+}
+
+.team svg{
+
+    width:52px;
+
+    height:52px;
+
+    padding:14px;
+
+    border-radius:50%;
+
+    background:#EEF4FF;
+
+    color:#0D5BFF;
+
+    font-size:22px;
+}
+
+.team span{
+
+    display:block;
+
+    color:#888;
+
+    font-size:14px;
+}
+
+.team h4{
+
+    margin-top:6px;
+
+    color:#1C2333;
+
+    font-size:19px;
+
+    font-weight:700;
+}
+
+/* ==========================================
+          APPROVAL BADGE
+========================================== */
+
+.status{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:14px 20px;
+
+    background:#E9FFF2;
+
+    color:#16A34A;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    font-size:15px;
+}
+
+.status svg{
+
+    font-size:18px;
+}
+
+/* ==========================================
+          PROGRESS SECTION
+========================================== */
+
+.progress-section{
+
+    margin-top:35px;
+
+    position:relative;
+
+    z-index:2;
+}
+
+.progress-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:12px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:#555;
+}
+
+/* ==========================================
+          PROGRESS BAR
+========================================== */
+
+.progress-bar{
+
+    width:100%;
+
+    height:12px;
+
+    background:#E9EEF7;
+
+    border-radius:30px;
+
+    overflow:hidden;
+}
+
+.progress-fill{
+
+    height:100%;
+
+    border-radius:30px;
+
+    transition:width .8s ease;
+
+    box-shadow:0 0 15px rgba(13,91,255,.35);
+}
+
+/* ==========================================
+              DOTS
+========================================== */
+
+.dots{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:14px;
+
+    margin-top:45px;
+}
+
+.dot{
+
+    width:14px;
+
+    height:14px;
+
+    border-radius:50%;
+
+    background:#CBD5E1;
+
+    cursor:pointer;
+
+    transition:.35s;
+}
+
+.dot:hover{
+
+    transform:scale(1.3);
+}
+
+.dot.active{
+
+    width:42px;
+
+    border-radius:30px;
+
+    background:#0D5BFF;
+}
+
+/* ==========================================
+        CARD FADE ANIMATION
+========================================== */
+
+.process-card{
+
+    animation:cardFade .6s ease;
+}
+
+@keyframes cardFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+    }
+
+}
+
+/* ==========================================
+            RESPONSIVE - TABLET
+========================================== */
+
+@media (max-width: 992px) {
+
+    .process {
+
+        padding: 90px 5%;
+
+    }
+
+    .process-slider {
+
+        gap: 20px;
+
+    }
+
+    .process-card {
+
+        width: 100%;
+
+        max-width: 650px;
+
+        padding: 35px;
+
+    }
+
+    .process-header h2 {
+
+        font-size: 40px;
+
+    }
+
+    .process-icon {
+
+        width: 100px;
+
+        height: 100px;
+
+        font-size: 40px;
+
+    }
+
+    .process-card h3 {
+
+        font-size: 30px;
+
+    }
+
+    .process-features {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+/* ==========================================
+            RESPONSIVE - MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+    .process{
+
+        padding:80px 5%;
+    }
+
+    .process-header h2{
+
+        font-size:34px;
+    }
+
+    .process-header p{
+
+        font-size:16px;
+    }
+
+    .process-slider{
+
+        display:block;
+
+        position:relative;
+    }
+
+    .process-card{
+
+        width:100%;
+
+        padding:30px 22px;
+
+        border-radius:22px;
+    }
+
+    .card-top{
+
+        flex-direction:column;
+
+        gap:15px;
+
+        align-items:flex-start;
+    }
+
+    .process-icon{
+
+        width:90px;
+
+        height:90px;
+
+        font-size:34px;
+
+        margin:25px auto;
+    }
+
+    .process-card h3{
+
+        font-size:26px;
+    }
+
+    .process-card p{
+
+        font-size:15px;
+    }
+
+    .process-features{
+
+        grid-template-columns:1fr;
+
+        gap:14px;
+    }
+
+    .process-footer{
+
+        flex-direction:column;
+
+        gap:20px;
+
+        align-items:flex-start;
+    }
+
+    .team{
+
+        width:100%;
+    }
+
+    .status{
+
+        width:100%;
+
+        justify-content:center;
+    }
+
+    .arrow{
+
+        position:absolute;
+
+        top:50%;
+
+        transform:translateY(-50%);
+
+        width:50px;
+
+        height:50px;
+
+        z-index:20;
+    }
+
+    .left-arrow{
+
+        left:-10px;
+    }
+
+    .right-arrow{
+
+        right:-10px;
+    }
+
+}
+
+/* ==========================================
+            SMALL MOBILE
+========================================== */
+
+@media (max-width:480px){
+
+    .process-header h2{
+
+        font-size:28px;
+    }
+
+    .process-tag{
+
+        font-size:12px;
+
+        padding:8px 18px;
+    }
+
+    .process-card{
+
+        padding:25px 18px;
+    }
+
+    .step-label{
+
+        font-size:13px;
+    }
+
+    .duration{
+
+        font-size:13px;
+
+        padding:8px 14px;
+    }
+
+    .process-icon{
+
+        width:80px;
+
+        height:80px;
+
+        font-size:30px;
+    }
+
+    .process-card h3{
+
+        font-size:22px;
+    }
+
+    .feature-box{
+
+        font-size:14px;
+
+        padding:14px;
+    }
+
+    .team h4{
+
+        font-size:17px;
+    }
+
+    .status{
+
+        font-size:14px;
+    }
+
+}
+
+/* ==========================================
+        PREMIUM FINISHING TOUCHES
+========================================== */
+
+.process-card{
+
+    backdrop-filter:blur(12px);
+}
+
+.process-card *{
+
+    transition:.3s ease;
+}
+
+.process-card:hover .feature-box{
+
+    border-color:#0D5BFF;
+}
+
+.process-card:hover .team svg{
+
+    transform:rotate(10deg) scale(1.08);
+}
+
+.process-card:hover .progress-fill{
+
+    box-shadow:0 0 20px rgba(13,91,255,.5);
+}
+
+.arrow:active{
+
+    transform:scale(.95);
+}
+
+.dot{
+
+    box-shadow:0 0 8px rgba(13,91,255,.15);
+}
+
+.dot.active{
+
+    box-shadow:0 0 15px rgba(13,91,255,.4);
+}

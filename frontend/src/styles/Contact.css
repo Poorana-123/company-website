@@ -1,0 +1,1385 @@
+/*=========================================
+            CONTACT PAGE
+=========================================*/
+
+.contact-page{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:120px 8%;
+
+    background:#f8fbff;
+
+}
+
+/*=========================================
+          BACKGROUND BLOBS
+=========================================*/
+
+.blob{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(80px);
+
+    opacity:.35;
+
+    z-index:0;
+
+}
+
+.blob1{
+
+    width:320px;
+
+    height:320px;
+
+    background:#0D5BFF;
+
+    top:-120px;
+
+    left:-120px;
+
+}
+
+.blob2{
+
+    width:260px;
+
+    height:260px;
+
+    background:#7A5FFF;
+
+    right:-80px;
+
+    top:250px;
+
+}
+
+.blob3{
+
+    width:220px;
+
+    height:220px;
+
+    background:#35C8FF;
+
+    bottom:80px;
+
+    left:35%;
+
+}
+
+/*=========================================
+              HERO SECTION
+=========================================*/
+
+.contact-hero{
+
+    position:relative;
+
+    z-index:2;
+
+    text-align:center;
+
+    max-width:850px;
+
+    margin:0 auto 90px;
+
+}
+
+.contact-tag{
+
+    display:inline-block;
+
+    padding:10px 24px;
+
+    border-radius:30px;
+
+    background:#EAF2FF;
+
+    color:#0D5BFF;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    margin-bottom:25px;
+
+}
+
+.contact-hero h1{
+
+    font-size:60px;
+
+    font-weight:700;
+
+    color:#1E293B;
+
+    line-height:1.2;
+
+    margin-bottom:25px;
+
+}
+
+.contact-hero h1 span{
+
+    color:#0D5BFF;
+
+}
+
+.contact-hero p{
+
+    font-size:18px;
+
+    color:#64748B;
+
+    line-height:1.9;
+
+    max-width:760px;
+
+    margin:auto;
+
+}
+
+/*=========================================
+          CONTACT CONTAINER
+=========================================*/
+
+.contact-container{
+
+    position:relative;
+
+    z-index:2;
+
+    display:grid;
+
+    grid-template-columns:1fr 1.2fr;
+
+    gap:60px;
+
+    align-items:flex-start;
+
+}
+
+/*=========================================
+            LEFT SECTION
+=========================================*/
+
+.contact-left h2{
+
+    font-size:42px;
+
+    color:#1E293B;
+
+    margin-bottom:20px;
+
+}
+
+.contact-left p{
+
+    color:#64748B;
+
+    line-height:1.9;
+
+    margin-bottom:40px;
+
+    font-size:17px;
+
+}
+
+/*=========================================
+        CONTACT INFO CARDS
+=========================================*/
+
+.contact-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+.info-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding:25px;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+    transition:.4s;
+
+}
+
+.info-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(13,91,255,.15);
+
+}
+
+.info-icon{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:18px;
+
+    background:#EEF4FF;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+    color:#0D5BFF;
+
+    transition:.4s;
+
+}
+
+.info-card:hover .info-icon{
+
+    background:#0D5BFF;
+
+    color:#fff;
+
+}
+
+.info-card h4{
+
+    font-size:20px;
+
+    color:#1E293B;
+
+    margin-bottom:8px;
+
+}
+
+.info-card span{
+
+    color:#64748B;
+
+    font-size:15px;
+
+    line-height:1.7;
+
+}
+
+/*=========================================
+          CONTACT FORM BOX
+=========================================*/
+
+.contact-form-box{
+
+    background:#fff;
+
+    padding:45px;
+
+    border-radius:30px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.contact-form-box h2{
+
+    font-size:34px;
+
+    color:#1E293B;
+
+    margin-bottom:30px;
+
+    text-align:center;
+
+}
+
+/*=========================================
+          FORM SWITCH
+=========================================*/
+
+.form-switch{
+
+    display:flex;
+
+    background:#EEF4FF;
+
+    padding:8px;
+
+    border-radius:50px;
+
+    margin-bottom:35px;
+
+    gap:10px;
+
+}
+
+.form-switch button{
+
+    flex:1;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:transparent;
+
+    color:#0D5BFF;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.form-switch button.active{
+
+    background:#0D5BFF;
+
+    color:#fff;
+
+    box-shadow:0 10px 25px rgba(13,91,255,.25);
+
+}
+
+.form-switch button:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/*=========================================
+            FORM
+=========================================*/
+
+.contact-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+
+.input-row{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+/*=========================================
+          INPUTS
+=========================================*/
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+
+    width:100%;
+
+    padding:17px 18px;
+
+    border:1px solid #dbe4f0;
+
+    border-radius:15px;
+
+    font-size:15px;
+
+    background:#fafcff;
+
+    color:#1E293B;
+
+    transition:.35s;
+
+    outline:none;
+
+    font-family:inherit;
+
+}
+
+.contact-form textarea{
+
+    resize:none;
+
+    min-height:160px;
+
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+
+    color:#94A3B8;
+
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus{
+
+    border-color:#0D5BFF;
+
+    background:#fff;
+
+    box-shadow:0 0 0 4px rgba(13,91,255,.10);
+
+}
+
+/*=========================================
+          SELECT
+=========================================*/
+
+.contact-form select{
+
+    cursor:pointer;
+
+}
+
+/*=========================================
+          SUBMIT BUTTON
+=========================================*/
+
+.submit-btn{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:linear-gradient(
+        135deg,
+        #0D5BFF,
+        #4A6FFF
+    );
+
+    color:#fff;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:12px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    margin-top:10px;
+
+}
+
+.submit-btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 18px 35px rgba(13,91,255,.30);
+
+}
+
+.submit-btn svg{
+
+    font-size:18px;
+
+}
+
+/*=========================================
+              MAP SECTION
+=========================================*/
+
+.map-section{
+
+    margin-top:120px;
+
+}
+
+.map-header{
+
+    text-align:center;
+
+    max-width:750px;
+
+    margin:0 auto 50px;
+
+}
+
+.map-header span{
+
+    display:inline-block;
+
+    padding:10px 24px;
+
+    background:#EEF4FF;
+
+    color:#0D5BFF;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    margin-bottom:20px;
+
+}
+
+.map-header h2{
+
+    font-size:48px;
+
+    color:#1E293B;
+
+    margin-bottom:18px;
+
+}
+
+.map-header p{
+
+    color:#64748B;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+}
+
+.map-wrapper{
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+}
+
+.map-wrapper iframe{
+
+    display:block;
+
+    width:100%;
+
+    border:none;
+
+}
+
+/*=========================================
+            FINAL BANNER
+=========================================*/
+
+.final-banner{
+
+    position:relative;
+
+    margin-top:120px;
+
+    padding:90px 60px;
+
+    border-radius:35px;
+
+    overflow:hidden;
+
+    text-align:center;
+
+    background:linear-gradient(
+        135deg,
+        #0D5BFF,
+        #345DFF,
+        #6C63FF
+    );
+
+    color:#fff;
+
+    box-shadow:0 30px 70px rgba(13,91,255,.30);
+
+}
+
+/*=========================================
+            CTA CONTENT
+=========================================*/
+
+.banner-content{
+
+    position:relative;
+
+    z-index:5;
+
+    max-width:820px;
+
+    margin:auto;
+
+}
+
+.banner-tag{
+
+    display:inline-block;
+
+    padding:10px 24px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(255,255,255,.2);
+
+    border-radius:40px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    margin-bottom:25px;
+
+}
+
+.banner-content h2{
+
+    font-size:58px;
+
+    line-height:1.2;
+
+    margin-bottom:25px;
+
+}
+
+.banner-content h2 span{
+
+    color:#FFD54F;
+
+}
+
+.banner-content p{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    opacity:.95;
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+/*=========================================
+            CTA BUTTON
+=========================================*/
+
+.banner-btn{
+
+    margin-top:40px;
+
+    padding:18px 45px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#fff;
+
+    color:#0D5BFF;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.banner-btn:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 18px 40px rgba(255,255,255,.35);
+
+}
+
+/*=========================================
+        FLOATING CIRCLES
+=========================================*/
+
+.floating-circle{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    animation:floatCircle 8s ease-in-out infinite;
+
+}
+
+.circle1{
+
+    width:220px;
+
+    height:220px;
+
+    top:-90px;
+
+    left:-70px;
+
+}
+
+.circle2{
+
+    width:150px;
+
+    height:150px;
+
+    right:8%;
+
+    bottom:-40px;
+
+    animation-delay:2s;
+
+}
+
+.circle3{
+
+    width:90px;
+
+    height:90px;
+
+    top:20%;
+
+    right:18%;
+
+    animation-delay:4s;
+
+}
+
+@keyframes floatCircle{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-18px);
+
+    }
+
+}
+/*=========================================
+            HOVER ANIMATIONS
+=========================================*/
+
+.info-card,
+.contact-form-box,
+.map-wrapper,
+.final-banner{
+
+    transition:all .4s ease;
+
+}
+
+.contact-form-box:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 30px 60px rgba(13,91,255,.12);
+
+}
+
+.map-wrapper:hover{
+
+    transform:scale(1.01);
+
+    box-shadow:0 30px 70px rgba(13,91,255,.18);
+
+}
+
+.final-banner:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 35px 80px rgba(13,91,255,.35);
+
+}
+
+/*=========================================
+            FADE ANIMATION
+=========================================*/
+
+.contact-hero,
+.contact-left,
+.contact-form-box,
+.map-section,
+.final-banner{
+
+    animation:fadeUp .9s ease forwards;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*=========================================
+            SCROLLBAR
+=========================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#EEF4FF;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#0D5BFF;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#1E40AF;
+
+}
+
+/*=========================================
+          TABLET RESPONSIVE
+=========================================*/
+
+@media (max-width:992px){
+
+.contact-page{
+
+padding:90px 6%;
+
+}
+
+.contact-container{
+
+grid-template-columns:1fr;
+
+gap:50px;
+
+}
+
+.contact-left{
+
+text-align:center;
+
+}
+
+.contact-info{
+
+max-width:600px;
+
+margin:auto;
+
+}
+
+.contact-hero h1{
+
+font-size:48px;
+
+}
+
+.map-header h2{
+
+font-size:40px;
+
+}
+
+.banner-content h2{
+
+font-size:46px;
+
+}
+
+.final-banner{
+
+padding:70px 40px;
+
+}
+
+}
+
+/*=========================================
+          MOBILE RESPONSIVE
+=========================================*/
+
+@media (max-width:768px){
+
+.contact-page{
+
+padding:70px 20px;
+
+}
+
+.contact-hero{
+
+margin-bottom:60px;
+
+}
+
+.contact-hero h1{
+
+font-size:36px;
+
+}
+
+.contact-hero p{
+
+font-size:16px;
+
+}
+
+.contact-left h2{
+
+font-size:32px;
+
+}
+
+.contact-form-box{
+
+padding:30px 22px;
+
+}
+
+.contact-form-box h2{
+
+font-size:28px;
+
+}
+
+.form-switch{
+
+flex-direction:column;
+
+}
+
+.form-switch button{
+
+width:100%;
+
+}
+
+.input-row{
+
+grid-template-columns:1fr;
+
+gap:18px;
+
+}
+
+.info-card{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.info-icon{
+
+margin-bottom:10px;
+
+}
+
+.map-header h2{
+
+font-size:34px;
+
+}
+
+.map-header p{
+
+font-size:16px;
+
+}
+
+.banner-content h2{
+
+font-size:34px;
+
+}
+
+.banner-content p{
+
+font-size:16px;
+
+}
+
+.banner-btn{
+
+width:100%;
+
+padding:18px;
+
+font-size:16px;
+
+}
+
+.final-banner{
+
+padding:60px 25px;
+
+margin-top:80px;
+
+}
+
+.circle1{
+
+width:120px;
+
+height:120px;
+
+}
+
+.circle2{
+
+width:90px;
+
+height:90px;
+
+}
+
+.circle3{
+
+display:none;
+
+}
+
+}
+
+/*=========================================
+            SMALL MOBILE
+=========================================*/
+
+@media (max-width:480px){
+
+.contact-tag{
+
+font-size:12px;
+
+padding:8px 18px;
+
+}
+
+.contact-hero h1{
+
+font-size:30px;
+
+}
+
+.contact-left h2{
+
+font-size:28px;
+
+}
+
+.contact-form-box{
+
+padding:25px 18px;
+
+}
+
+.info-card{
+
+padding:18px;
+
+}
+
+.info-icon{
+
+width:60px;
+
+height:60px;
+
+font-size:24px;
+
+}
+
+.info-card h4{
+
+font-size:18px;
+
+}
+
+.info-card span{
+
+font-size:14px;
+
+}
+
+.map-header h2{
+
+font-size:28px;
+
+}
+
+.banner-tag{
+
+font-size:12px;
+
+}
+
+.banner-content h2{
+
+font-size:28px;
+
+}
+
+.banner-content p{
+
+font-size:15px;
+
+}
+
+}
+
+/*=========================================
+            FORM ELEMENTS
+=========================================*/
+
+.contact-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+.input-row{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+.contact-form-box input,
+.contact-form-box select,
+.contact-form-box textarea{
+
+    width:100%;
+
+    padding:16px 18px;
+
+    border:2px solid #E5EAF3;
+
+    border-radius:14px;
+
+    background:#ffffff;
+
+    font-size:15px;
+
+    color:#1E293B;
+
+    outline:none;
+
+    transition:.35s;
+
+    font-family:inherit;
+
+}
+
+.contact-form-box textarea{
+
+    min-height:170px;
+
+    resize:none;
+
+}
+
+.contact-form-box input::placeholder,
+.contact-form-box textarea::placeholder{
+
+    color:#94A3B8;
+
+}
+
+.contact-form-box input:focus,
+.contact-form-box select:focus,
+.contact-form-box textarea:focus{
+
+    border-color:#0D5BFF;
+
+    box-shadow:0 0 0 4px rgba(13,91,255,.10);
+
+}
+
+/* Select Dropdown */
+
+.contact-form-box select{
+
+    appearance:none;
+
+    -webkit-appearance:none;
+
+    -moz-appearance:none;
+
+    cursor:pointer;
+
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='%230D5BFF' viewBox='0 0 16 16'%3E%3Cpath d='M1.5 5.5l6 6 6-6'/%3E%3C/svg%3E");
+
+    background-repeat:no-repeat;
+
+    background-position:right 18px center;
+
+    padding-right:50px;
+
+}
+
+/*=========================================
+            SUBMIT BUTTON
+=========================================*/
+
+.submit-btn{
+
+    width:100%;
+
+    padding:18px;
+
+    margin-top:10px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:linear-gradient(135deg,#0D5BFF,#4A6FFF);
+
+    color:#fff;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.submit-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 18px 35px rgba(13,91,255,.25);
+
+}
+
+.submit-btn svg{
+
+    font-size:18px;
+
+}
+
+/*=========================================
+        MOBILE FORM
+=========================================*/
+
+@media(max-width:768px){
+
+.input-row{
+
+grid-template-columns:1fr;
+
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+
+font-size:14px;
+
+}
+
+}
+
