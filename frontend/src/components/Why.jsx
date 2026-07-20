@@ -1,119 +1,126 @@
+import React from "react";
 import "../styles/Why.css";
 
-import {
-  FaUserTie,
-  FaLaptopCode,
-  FaBriefcase,
-  FaCertificate,
-  FaHeadset,
-  FaClock,
-} from "react-icons/fa";
+const Why = () => {
 
-function Why() {
-  const features = [
-    {
-      icon: <FaUserTie />,
-      title: "Industry Experts",
-      description:
-        "Experienced professionals delivering real-world IT solutions.",
-    },
-    {
-      icon: <FaLaptopCode />,
-      title: "Hands-on Projects",
-      description:
-        "Build practical applications through live industry projects.",
-    },
-    {
-      icon: <FaBriefcase />,
-      title: "Placement Support",
-      description:
-        "Resume building, interview preparation, and career guidance.",
-    },
-    {
-      icon: <FaCertificate />,
-      title: "Professional Certification",
-      description:
-        "Earn certificates recognized by industry professionals.",
-    },
-    {
-      icon: <FaHeadset />,
-      title: "24/7 Technical Support",
-      description:
-        "Continuous assistance from our experienced technical team.",
-    },
-    {
-      icon: <FaClock />,
-      title: "Flexible Learning",
-      description:
-        "Online, offline, and hybrid learning designed for your schedule.",
-    },
-  ];
+    return (
+        <section className="why-section">
 
-  return (
-    <section id="why-us" className="why">
+            <div className="why-header">
 
-      <div className="why-header">
+                <h2>
+                    Our <span>Values</span>
+                </h2>
 
-        <span className="why-tag">
-          WHY CHOOSE US
-        </span>
+                <div className="underline"></div>
 
-        <h2>
-          Why Businesses &
-          <span> Students Choose RMV Technologies</span>
-        </h2>
-
-        <p>
-          We combine innovation, technical expertise, and practical learning
-          to deliver outstanding IT solutions and career-focused training
-          programs that help businesses grow and students succeed.
-        </p>
-
-      </div>
-
-      <div className="orbit-container">
-
-        {/* Center Circle */}
-        <div className="center-circle">
-
-          <h2>RMV</h2>
-
-          <p>Technologies</p>
-
-        </div>
-
-        {/* Orbit Ring */}
-        <div className="orbit-ring">
-
-          {features.map((feature, index) => (
-
-            <div
-              key={index}
-              className={`orbit-card orbit-${index + 1}`}
-            >
-
-              <div className="card-content">
-
-                <div className="orbit-icon">
-                  {feature.icon}
-                </div>
-
-                <h3>{feature.title}</h3>
-
-                <p>{feature.description}</p>
-
-              </div>
+                <p>
+                    Abservetech provides creative websites, native mobile apps,
+                    innovative technology services, and custom web mobile app
+                    solutions, from startup companies to huge organizations.
+                </p>
 
             </div>
 
-          ))}
 
-        </div>
+            <div className="why-container">
 
-      </div>
 
-    </section>
-  );
+                {/* LEFT CONTENT */}
+
+                <div className="why-content">
+
+
+                    <div className="line"></div>
+
+
+                    <div className="why-text">
+
+
+                        <div className="value-box">
+
+                            <h3>
+                                Latest Technology
+                            </h3>
+
+                            <p>
+                                We are very adaptive to leading-edge technologies.
+                                Our products have built on the latest technologies
+                                like MEAN stack, MERN stack, Swift, GraphQL.
+                                It is one of the unbeatable aspects that make our
+                                clients have a trendy and secured business.
+                            </p>
+
+                        </div>
+
+
+
+                        <div className="value-box second">
+
+                            <h3>
+                                Team of Experts
+                            </h3>
+
+                            <p>
+                                Our experienced developers and designers work
+                                together to deliver scalable, secure and
+                                innovative digital solutions.
+                            </p>
+
+                        </div>
+
+
+                        <div className="value-box">
+
+                            <h3>
+                                Customer Satisfaction
+                            </h3>
+
+                            <p>
+                                We focus on understanding customer needs and
+                                delivering solutions that create long-term value.
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+                {/* RIGHT IMAGE */}
+
+
+                <div className="why-image">
+
+
+                    <div className="glow"></div>
+
+
+                    <img 
+                    src="/images/team.jpg"
+                    alt="team"
+                    />
+
+
+                    <div className="shape">
+                        ◆
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+    )
 }
+
 
 export default Why;

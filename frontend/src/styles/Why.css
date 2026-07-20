@@ -1,492 +1,385 @@
-/* ===========================
-   WHY CHOOSE US SECTION
-=========================== */
-
-.why{
-    padding:120px 8%;
-    background:#f8fbff;
-    overflow:hidden;
-}
-
-.why-header{
-    max-width:850px;
-    margin:0 auto 100px;
-    text-align:center;
-}
-
-.why-tag{
-    display:inline-block;
-    padding:12px 28px;
-    background:#EEF4FF;
-    color:#0D5BFF;
-    border-radius:40px;
-    font-size:15px;
-    font-weight:700;
-    letter-spacing:2px;
-    text-transform:uppercase;
-    margin-bottom:20px;
-}
-
-.why-header h2{
-    font-size:52px;
-    color:#1c2333;
-    line-height:1.2;
-    margin-bottom:25px;
-}
-
-.why-header h2 span{
-    color:#0D5BFF;
-}
-
-.why-header p{
-    font-size:18px;
-    line-height:1.8;
-    color:#666;
-}
-
-/* ===========================
-      ORBIT CONTAINER
-=========================== */
-
-.orbit-container{
-
-    position:relative;
-
-    width: 900px;
-
-    height:900px;
-
-    margin:40px auto;
-
-}
-
-/* ===========================
-      CENTER CIRCLE
-=========================== */
-
-.center-circle{
-
-    position:absolute;
-
-    left:50%;
-
-    top:50%;
-
-    transform:translate(-50%,-50%);
-
-    width:220px;
-
-    height:220px;
-
-    border-radius:50%;
-
-    background:linear-gradient(135deg,#0D5BFF,#5B6CFF);
-
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:center;
-
-    align-items:center;
-
-    color:#fff;
-
-    text-align:center;
-
-    box-shadow:0 20px 50px rgba(13,91,255,.35);
-
-    z-index:10;
-}
-
-.center-circle h2{
-
-    font-size:46px;
-
-    margin:0;
-
-    color:white;
-}
-
-.center-circle p{
-
-    margin-top:10px;
-
-    font-size:18px;
-
-    color:white;
-
-    letter-spacing:1px;
-}
-
-/* ===========================
-       ROTATING RING
-=========================== */
-
-.orbit-ring{
-
-    position:absolute;
-
-    width:100%;
-
-    height:100%;
-
-    animation:orbit 25s linear infinite;
-}
-
-/* ===========================
-        FEATURE CARD
-=========================== */
-
-.orbit-card{
-
-    position:absolute;
-
-    width:230px;
-
-    height:230px;
-
-    background:#fff;
-
-    border-radius:22px;
-
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
-
-    transition:.4s;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    animation:counterOrbit 25s linear infinite;
-}
-
-.card-content{
-
-    text-align:center;
-
-    padding:20px;
-}
-
-.orbit-icon{
-
-    font-size:40px;
-
-    color:#0D5BFF;
-
-    margin-bottom:16px;
-}
-
-.card-content h3{
-
-    font-size:20px;
-
-    color:#1c2333;
-
-    margin-bottom:12px;
-}
-
-.card-content p{
-
-    font-size:15px;
-
-    color:#666;
-
-    line-height:1.6;
-}
-
-/* ===========================
-       HOVER EFFECT
-=========================== */
-
-.orbit-card:hover{
-
-    transform:scale(1.12);
-
-    background:#0D5BFF;
-
-    box-shadow:0 20px 40px rgba(13,91,255,.35);
-
-    z-index:100;
-}
-
-.orbit-card:hover .orbit-icon,
-.orbit-card:hover h3,
-.orbit-card:hover p{
-
-    color:#fff;
-}
-
-/* ===========================
-        ANIMATIONS
-=========================== */
-
-@keyframes orbit{
-
-    from{
-        transform:rotate(0deg);
-    }
-
-    to{
-        transform:rotate(360deg);
-    }
-
-}
-
-@keyframes counterOrbit{
-
-    from{
-        transform:rotate(0deg);
-    }
-
-    to{
-        transform:rotate(-360deg);
-    }
-
-}
-/* ===========================
-      CARD POSITIONS
-=========================== */
-
-/* Top */
-/* ===========================
-      CARD POSITIONS
-=========================== */
-
-/* Top */
-.orbit-1{
-    top:-40px;
-    left:50%;
-    transform:translateX(-50%);
-}
-
-/* Top Right */
-.orbit-2{
-    top:105px;
-    right:25px;
-}
-
-/* Bottom Right */
-.orbit-3{
-    bottom:105px;
-    right:25px;
-}
-
-/* Bottom */
-.orbit-4{
-    bottom:-40px;
-    left:50%;
-    transform:translateX(-50%);
-}
-
-/* Bottom Left */
-.orbit-5{
-    bottom:105px;
-    left:25px;
-}
-
-/* Top Left */
-.orbit-6{
-    top:105px;
-    left:25px;
+/* =====================================
+        WHY CHOOSE US SECTION
+===================================== */
+
+.why-section {
+
+    width: 100%;
+    padding: 90px 8%;
+    background: #ffffff;
 }
 
 
-/* ===========================
-        SMOOTH EFFECTS
-=========================== */
+/* HEADER */
 
-.orbit-card{
-    cursor:pointer;
-    overflow:hidden;
+.why-header {
+
+    text-align: center;
+    max-width: 850px;
+    margin: auto;
 }
 
-.orbit-card::before{
 
-    content:"";
+.why-header h2 {
 
-    position:absolute;
+    font-size: 42px;
+    font-weight: 700;
+    color: #111827;
+}
 
-    inset:0;
 
-    background:linear-gradient(
-        135deg,
-        rgba(13,91,255,.08),
-        transparent
+.why-header h2 span {
+
+    color: #0066ff;
+}
+
+
+.underline {
+
+    width: 80px;
+    height: 4px;
+    background: #0066ff;
+    margin: 15px auto;
+    border-radius: 10px;
+}
+
+
+.why-header p {
+
+    margin-top: 20px;
+    color: #666;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+
+
+/* MAIN CONTAINER */
+
+.why-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 70px;
+
+    margin-top: 70px;
+
+}
+
+
+
+/* LEFT CONTENT */
+
+.why-content {
+
+    flex: 1;
+
+    display: flex;
+
+    position: relative;
+
+}
+
+
+
+/* VERTICAL LINE */
+
+.line {
+
+    width: 3px;
+
+    height: 100%;
+
+    background: linear-gradient(
+        to bottom,
+        #aa3bff,
+        #00c6ff
     );
 
-    opacity:0;
+    position: absolute;
 
-    transition:.4s;
+    left: 10px;
+
+    top: 0;
+
 }
 
-.orbit-card:hover::before{
 
-    opacity:1;
+
+/* TEXT AREA */
+
+.why-text {
+
+    padding-left: 50px;
+
 }
 
-.orbit-card:hover{
+
+
+/* VALUE BOX */
+
+.value-box {
+
+    position: relative;
+
+    margin-bottom: 45px;
+
+    padding: 25px 30px;
+
+    background: #ffffff;
+
+    border-radius: 15px;
+
+    box-shadow: 
+    0 10px 30px rgba(0,0,0,0.08);
+
+    transition: 0.4s;
+
+}
+
+
+
+/* DOT */
+
+.value-box::before {
+
+    content: "";
+
+    width: 18px;
+
+    height: 18px;
+
+    background: #2563eb;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    left: -50px;
+
+    top: 30px;
+
+    border: 4px solid white;
+
+    box-shadow: 0 0 15px #2563eb;
+
+}
+
+
+
+.value-box h3 {
+
+    font-size: 24px;
+
+    color: #111827;
+
+    margin-bottom: 15px;
+
+}
+
+
+.value-box p {
+
+    color: #666;
+
+    line-height: 1.8;
+
+    font-size: 15px;
+
+}
+
+
+
+/* HOVER EFFECT */
+
+.value-box:hover {
+
+    transform: translateY(-8px);
 
     box-shadow:
-        0 25px 60px rgba(13,91,255,.35);
-
-    transition:.4s;
-}
-
-.center-circle{
-
-    animation:pulse 3s ease-in-out infinite;
-}
-
-@keyframes pulse{
-
-    0%{
-
-        transform:translate(-50%,-50%) scale(1);
-
-    }
-
-    50%{
-
-        transform:translate(-50%,-50%) scale(1.05);
-
-    }
-
-    100%{
-
-        transform:translate(-50%,-50%) scale(1);
-
-    }
+    0 15px 35px rgba(170,59,255,0.2);
 
 }
 
 
-/* ===========================
-        RESPONSIVE
-=========================== */
 
-@media (max-width:992px){
+/* RIGHT IMAGE */
 
-    .orbit-container{
 
-        width:600px;
+.why-image {
 
-        height:600px;
-    }
+    flex: 1;
 
-    .orbit-card{
+    position: relative;
 
-        width:150px;
+    display: flex;
 
-        height:150px;
-    }
+    justify-content: center;
 
-    .center-circle{
-
-        width:180px;
-
-        height:180px;
-    }
-
-    .center-circle h2{
-
-        font-size:34px;
-    }
-
-    .card-content h3{
-
-        font-size:18px;
-    }
-
-    .card-content p{
-
-        font-size:13px;
-    }
+    align-items: center;
 
 }
 
 
-@media (max-width:768px){
 
-    .orbit-container{
+.why-image img {
 
-        width:100%;
+    width: 100%;
 
-        height:auto;
+    max-width: 500px;
 
-        display:grid;
+    height: 450px;
 
-        grid-template-columns:repeat(2,1fr);
+    object-fit: cover;
 
-        gap:20px;
-    }
+    border-radius: 30px;
 
-    .orbit-ring{
+    position: relative;
 
-        position:static;
+    z-index: 2;
 
-        animation:none;
 
-        display:grid;
-
-        grid-template-columns:repeat(2,1fr);
-
-        gap:20px;
-    }
-
-    .center-circle{
-
-        position:static;
-
-        transform:none;
-
-        width:100%;
-
-        height:180px;
-
-        border-radius:25px;
-
-        margin-bottom:25px;
-    }
-
-    .orbit-card{
-
-        position:static;
-
-        animation:none;
-
-        width:100%;
-
-        height:220px;
-
-        transform:none !important;
-    }
+    box-shadow:
+    0 20px 40px rgba(0,0,0,0.15);
 
 }
 
 
-@media (max-width:576px){
 
-    .orbit-ring{
+/* GLOW BACKGROUND */
 
-        grid-template-columns:1fr;
+.glow {
+
+    position: absolute;
+
+    width: 350px;
+
+    height: 350px;
+
+    background: #aa3bff;
+
+    filter: blur(100px);
+
+    opacity: 0.35;
+
+    border-radius: 50%;
+
+}
+
+
+
+/* DECORATIVE SHAPE */
+
+.shape {
+
+    position: absolute;
+
+    right: 20px;
+
+    bottom: 20px;
+
+    width: 80px;
+
+    height: 80px;
+
+    background: linear-gradient(
+        135deg,
+        #aa3bff,
+        #00c6ff
+    );
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 30px;
+
+    border-radius: 20px;
+
+    transform: rotate(45deg);
+
+    z-index: 3;
+
+}
+
+
+
+.shape::first-letter {
+
+    transform: rotate(-45deg);
+
+}
+
+
+
+/* =====================================
+        RESPONSIVE DESIGN
+===================================== */
+
+
+@media(max-width: 992px){
+
+
+    .why-container {
+
+        flex-direction: column;
+
     }
 
-    .orbit-card{
 
-        height:200px;
+    .why-image img {
+
+        height: 380px;
+
     }
 
-    .why-header h2{
 
-        font-size:34px;
+}
+
+
+
+@media(max-width:600px){
+
+
+    .why-section {
+
+        padding: 60px 5%;
+
     }
 
-    .why-header p{
 
-        font-size:16px;
+    .why-header h2 {
+
+        font-size: 32px;
+
     }
+
+
+    .why-text {
+
+        padding-left: 35px;
+
+    }
+
+
+    .value-box {
+
+        padding:20px;
+
+    }
+
+
+    .value-box h3 {
+
+        font-size:20px;
+
+    }
+
 
 }
