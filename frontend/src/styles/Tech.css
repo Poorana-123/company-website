@@ -1,0 +1,805 @@
+/* =====================================================
+                    TECHNOLOGY SECTION
+===================================================== */
+
+.technology-section{
+    width:100%;
+    padding:90px 8%;
+    background:#f8fbff;
+}
+
+.container{
+    max-width:1350px;
+    margin:auto;
+}
+
+/* =====================================================
+                    HEADING
+===================================================== */
+
+.section-heading{
+    text-align:center;
+    max-width:760px;
+    margin:auto;
+}
+
+.section-heading span{
+    display:inline-block;
+    padding:8px 22px;
+    border-radius:30px;
+    background:#EAF3FF;
+    color:#0D5BFF;
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.section-heading h2{
+    margin-top:20px;
+    font-size:46px;
+    color:#081C3A;
+    font-weight:700;
+}
+
+.section-heading p{
+    margin-top:18px;
+    color:#6B7280;
+    line-height:1.8;
+    font-size:17px;
+}
+
+/* =====================================================
+                    TABS
+===================================================== */
+
+.technology-tabs{
+
+    margin-top:55px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    border-bottom:1px solid #E5E7EB;
+
+    padding-bottom:18px;
+
+}
+
+.tab{
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    padding:14px 20px;
+
+    color:#6B7280;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    position:relative;
+
+    transition:.35s;
+
+}
+
+.tab:hover{
+
+    color:#0D5BFF;
+
+}
+
+.tab.active{
+
+    color:#0D5BFF;
+
+}
+
+.tab.active::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-19px;
+
+    width:100%;
+
+    height:3px;
+
+    background:#0D5BFF;
+
+    border-radius:20px;
+
+}
+
+/* =====================================================
+                TECHNOLOGY GRID
+===================================================== */
+
+.technology-grid{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+
+    gap:35px;
+
+    justify-items:center;
+
+}
+
+/* =====================================================
+                CARD
+===================================================== */
+
+.technology-card{
+
+    width:140px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    animation:floatWave 4s ease-in-out infinite;
+
+}
+
+.technology-icon{
+
+    width:95px;
+
+    height:95px;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:42px;
+
+    color:#0D5BFF;
+
+    box-shadow:
+
+        0 12px 30px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+    cursor:pointer;
+
+}
+
+.technology-card h4{
+
+    margin-top:18px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    color:#111827;
+
+    text-align:center;
+
+}
+
+.technology-icon:hover{
+
+    transform:translateY(-10px) scale(1.08);
+
+    background:#0D5BFF;
+
+    color:#fff;
+
+    box-shadow:
+
+    0 20px 40px rgba(13,91,255,.30);
+
+}
+
+.technology-card:hover h4{
+
+    color:#0D5BFF;
+
+}
+/* =====================================================
+                WAVE ANIMATION
+===================================================== */
+
+@keyframes floatWave{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    25%{
+        transform:translateY(-12px);
+    }
+
+    50%{
+        transform:translateY(0px);
+    }
+
+    75%{
+        transform:translateY(12px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+/* Different delay for every card */
+
+.technology-card:nth-child(1){
+
+    animation-delay:0s;
+
+}
+
+.technology-card:nth-child(2){
+
+    animation-delay:.20s;
+
+}
+
+.technology-card:nth-child(3){
+
+    animation-delay:.40s;
+
+}
+
+.technology-card:nth-child(4){
+
+    animation-delay:.60s;
+
+}
+
+.technology-card:nth-child(5){
+
+    animation-delay:.80s;
+
+}
+
+.technology-card:nth-child(6){
+
+    animation-delay:1s;
+
+}
+
+.technology-card:nth-child(7){
+
+    animation-delay:1.20s;
+
+}
+
+.technology-card:nth-child(8){
+
+    animation-delay:1.40s;
+
+}
+
+.technology-card:nth-child(9){
+
+    animation-delay:1.60s;
+
+}
+
+.technology-card:nth-child(10){
+
+    animation-delay:1.80s;
+
+}
+
+/* Pause animation on hover */
+
+.technology-grid:hover .technology-card{
+
+    animation-play-state:paused;
+
+}
+
+/* =====================================================
+                ICON EFFECT
+===================================================== */
+
+.technology-icon{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.technology-icon::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+
+        rgba(13,91,255,.15),
+
+        transparent 70%
+
+    );
+
+    opacity:0;
+
+    transition:.4s;
+
+}
+
+.technology-card:hover .technology-icon::before{
+
+    opacity:1;
+
+}
+
+/* Rotate icon slightly */
+
+.technology-icon svg{
+
+    transition:.35s;
+
+}
+
+.technology-card:hover .technology-icon svg{
+
+    transform:rotate(10deg) scale(1.12);
+
+}
+
+/* =====================================================
+                TAB HOVER
+===================================================== */
+
+.tab{
+
+    overflow:hidden;
+
+}
+
+.tab::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-100%;
+
+    bottom:0;
+
+    width:100%;
+
+    height:3px;
+
+    background:#0D5BFF;
+
+    transition:.4s;
+
+}
+
+.tab:hover::before{
+
+    left:0;
+
+}
+
+/* =====================================================
+                RESPONSIVE
+===================================================== */
+
+@media (max-width:992px){
+
+    .technology-grid{
+
+        grid-template-columns:repeat(4,1fr);
+
+        gap:28px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .technology-section{
+
+        padding:70px 5%;
+
+    }
+
+    .section-heading h2{
+
+        font-size:34px;
+
+    }
+
+    .section-heading p{
+
+        font-size:15px;
+
+    }
+
+    /* Horizontal scroll tabs */
+
+    .technology-tabs{
+
+        justify-content:flex-start;
+
+        flex-wrap:nowrap;
+
+        overflow-x:auto;
+
+        overflow-y:hidden;
+
+        scrollbar-width:none;
+
+        -ms-overflow-style:none;
+
+    }
+
+    .technology-tabs::-webkit-scrollbar{
+
+        display:none;
+
+    }
+
+    .tab{
+
+        flex:0 0 auto;
+
+        white-space:nowrap;
+
+    }
+
+    .technology-grid{
+
+        grid-template-columns:repeat(3,1fr);
+
+        gap:24px;
+
+    }
+
+    .technology-card{
+
+        width:110px;
+
+    }
+
+    .technology-icon{
+
+        width:80px;
+
+        height:80px;
+
+        font-size:34px;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .technology-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:20px;
+
+    }
+
+    .technology-card{
+
+        width:100%;
+
+    }
+
+    .technology-icon{
+
+        width:72px;
+
+        height:72px;
+
+        font-size:30px;
+
+    }
+
+    .technology-card h4{
+
+        font-size:14px;
+
+    }
+
+}
+
+/* =====================================================
+                BACKGROUND DECORATION
+===================================================== */
+
+.technology-section{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.technology-section::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    background:rgba(13,91,255,.05);
+
+    border-radius:50%;
+
+    top:-120px;
+
+    left:-120px;
+
+    filter:blur(40px);
+
+}
+
+.technology-section::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:280px;
+
+    height:280px;
+
+    background:rgba(13,91,255,.06);
+
+    border-radius:50%;
+
+    bottom:-80px;
+
+    right:-80px;
+
+    filter:blur(40px);
+
+}
+
+/* =====================================================
+                ACTIVE TAB
+===================================================== */
+
+.tab.active{
+
+    color:#0D5BFF;
+
+    font-weight:700;
+
+}
+
+.tab.active::after{
+
+    animation:tabLine .35s ease;
+
+}
+
+@keyframes tabLine{
+
+    from{
+
+        width:0;
+
+    }
+
+    to{
+
+        width:100%;
+
+    }
+
+}
+
+/* =====================================================
+                CARD HOVER
+===================================================== */
+
+.technology-card{
+
+    transition:.35s;
+
+}
+
+.technology-card:hover{
+
+    transform:translateY(-12px);
+
+}
+
+.technology-card:hover .technology-icon{
+
+    transform:scale(1.12);
+
+}
+
+.technology-card:hover h4{
+
+    color:#0D5BFF;
+
+}
+
+/* =====================================================
+                ICON SHADOW
+===================================================== */
+
+.technology-icon{
+
+    border:1px solid rgba(13,91,255,.08);
+
+}
+
+.technology-card:hover .technology-icon{
+
+    box-shadow:
+
+    0 18px 40px rgba(13,91,255,.22);
+
+}
+
+/* =====================================================
+                TAB CONTENT FADE
+===================================================== */
+
+.technology-grid{
+
+    animation:fadeUp .45s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* =====================================================
+                ICON LABEL
+===================================================== */
+
+.technology-card h4{
+
+    transition:.3s;
+
+    letter-spacing:.3px;
+
+}
+
+/* =====================================================
+                LARGE DESKTOP
+===================================================== */
+
+@media(min-width:1400px){
+
+    .technology-grid{
+
+        grid-template-columns:repeat(6,1fr);
+
+    }
+
+}
+
+/* =====================================================
+                TABLET
+===================================================== */
+
+@media(max-width:992px){
+
+    .technology-tabs{
+
+        gap:8px;
+
+    }
+
+}
+
+/* =====================================================
+                MOBILE
+===================================================== */
+
+@media(max-width:768px){
+
+    .technology-tabs{
+
+        padding-bottom:10px;
+
+    }
+
+    .technology-grid{
+
+        margin-top:45px;
+
+    }
+
+}
+
+/* =====================================================
+                SMALL MOBILE
+===================================================== */
+
+@media(max-width:480px){
+
+    .section-heading h2{
+
+        font-size:28px;
+
+    }
+
+    .section-heading p{
+
+        font-size:14px;
+
+    }
+
+    .technology-grid{
+
+        gap:18px;
+
+    }
+
+    .technology-icon{
+
+        width:68px;
+
+        height:68px;
+
+        font-size:28px;
+
+    }
+
+}
