@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../styles/Portfolio.css";
+import Tech from "./Tech";
 
 import {
   FaLaptopCode,
@@ -503,129 +504,9 @@ function Portfolio() {
 
       <section className="technology-section">
 
-        <div className="section-heading">
+        
 
-          <span>
-
-            TECHNOLOGIES
-
-          </span>
-
-          <h2>
-
-            Technologies We Work With
-
-          </h2>
-
-          <p>
-
-            We build modern, scalable, secure, and high-performance
-            applications using industry-leading technologies.
-
-          </p>
-
-        </div>
-
-        <div className="technology-grid">
-
-          <div className="tech-card">
-
-            <FaLaptopCode />
-
-            <h4>
-
-              React JS
-
-            </h4>
-
-          </div>
-
-          <div className="tech-card">
-
-            <FaLaptopCode />
-
-            <h4>
-
-              Node JS
-
-            </h4>
-
-          </div>
-
-          <div className="tech-card">
-
-            <FaLaptopCode />
-
-            <h4>
-
-              Python
-
-            </h4>
-
-          </div>
-
-          <div className="tech-card">
-
-            <FaLaptopCode />
-
-            <h4>
-
-              Django
-
-            </h4>
-
-          </div>
-
-          <div className="tech-card">
-
-            <FaMobileAlt />
-
-            <h4>
-
-              Flutter
-
-            </h4>
-
-          </div>
-
-          <div className="tech-card">
-
-            <FaRobot />
-
-            <h4>
-
-              Artificial Intelligence
-
-            </h4>
-
-          </div>
-
-          <div className="tech-card">
-
-            <FaCloud />
-
-            <h4>
-
-              Cloud Computing
-
-            </h4>
-
-          </div>
-
-          <div className="tech-card">
-
-            <FaPalette />
-
-            <h4>
-
-              UI / UX Design
-
-            </h4>
-
-          </div>
-
-        </div>
-
+       <Tech/>
       </section>
             {/* =====================================
               CLIENT SUCCESS
