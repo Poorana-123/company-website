@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Why.css";
+import Teamimage from "../assets/team.avif";
 
 const Why = () => {
 
@@ -102,14 +103,9 @@ const Why = () => {
 
 
                     <img 
-                    src="/images/team.jpg"
+                    src={Teamimage}
                     alt="team"
                     />
-
-
-                    <div className="shape">
-                        ◆
-                    </div>
 
 
                 </div>

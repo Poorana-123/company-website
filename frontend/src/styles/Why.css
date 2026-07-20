@@ -270,52 +270,6 @@
 
 
 
-/* DECORATIVE SHAPE */
-
-.shape {
-
-    position: absolute;
-
-    right: 20px;
-
-    bottom: 20px;
-
-    width: 80px;
-
-    height: 80px;
-
-    background: linear-gradient(
-        135deg,
-        #aa3bff,
-        #00c6ff
-    );
-
-    color: white;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    font-size: 30px;
-
-    border-radius: 20px;
-
-    transform: rotate(45deg);
-
-    z-index: 3;
-
-}
-
-
-
-.shape::first-letter {
-
-    transform: rotate(-45deg);
-
-}
-
 
 
 /* =====================================
@@ -328,14 +282,15 @@
 
     .why-container {
 
-        flex-direction: column;
+        flex-direction: column-reverse;
 
     }
 
 
     .why-image img {
 
-        height: 380px;
+        height: 480px;
+        width: auto;
 
     }
 
