@@ -6,7 +6,7 @@ import Services from "../components/Services";
 import Why from "../components/Why";
 import Process from "../components/Process";
 import Tech from "../components/Tech";
-// import Testimonials from "../components/Testimonials";
+import Testimonials from "../components/Testimonials";
 import Project from "../components/Project";
 import Footer from "../components/Footer";
 
@@ -21,13 +21,9 @@ function Home() {
       <Tech />
       <Services />
       <Process/>
-      <Tech />
       <Project />
-      <Footer />
-      {/*
       <Testimonials />
-      
-       */}
+      <Footer />
     </>
   );
 }
